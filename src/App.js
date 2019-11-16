@@ -4,6 +4,7 @@ import './App.css';
 import Greet from './components/Greet';
 import { Greet2 } from './components/Greet2';
 import Welcome from './components/Welcome';
+import Hello from './components/Hello';
 
 const nickname = 'BelL NaJa';
 
@@ -26,6 +27,7 @@ function App() {
         <Greet/>
         <Greet2/>
         <Welcome/>
+        <Hello/>
       </header>
     </div>
   );
