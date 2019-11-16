@@ -5,7 +5,8 @@ import Greet from './components/Greet';
 import { Greet2 } from './components/Greet2';
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
-
+import Props from './components/Props';
+import PropComponent from './components/PropsComponent';
 const nickname = 'BelL NaJa';
 
 const user = {
@@ -28,6 +29,10 @@ function App() {
         <Greet2/>
         <Welcome/>
         <Hello/>
+        <Props name="Prop Tinnakorn">
+          <p> This is Children</p>
+        </Props>
+        <PropComponent name="Props Component Bell"/>
       </header>
     </div>
   );
