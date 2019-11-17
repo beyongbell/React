@@ -16,6 +16,7 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
 
 const nickname = 'BelL NaJa';
 
@@ -35,6 +36,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p> {formatName(user)} </p>
         <p> { nickname } </p>
+        <UserGreeting/>
         <ParentComponent/>
         <FunctionClick/>
         <ClassClick/>
