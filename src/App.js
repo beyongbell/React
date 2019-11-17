@@ -14,6 +14,7 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
 
 const nickname = 'BelL NaJa';
 
@@ -35,6 +36,7 @@ function App() {
         <p> { nickname } </p>
         <FunctionClick/>
         <ClassClick/>
+        <EventBind></EventBind>
         <Greet/>
         <Greet2/>
         <Welcome/>
