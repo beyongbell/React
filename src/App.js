@@ -17,6 +17,8 @@ import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
+import NameListObj from './components/NameListObj';
 
 const nickname = 'BelL NaJa';
 
@@ -36,6 +38,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p> {formatName(user)} </p>
         <p> { nickname } </p>
+        <NameList/>
+        <NameListObj/>
         <UserGreeting/>
         <ParentComponent/>
         <FunctionClick/>
