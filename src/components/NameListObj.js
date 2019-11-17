@@ -3,7 +3,7 @@ import Person from './Person'
 
 export default function NameListObj () {
     const names = ['Bruce', 'Clark', 'Diana'];
-    const nameList = names.map(name => <h2>{name}</h2>)
+    const nameList = names.map((name, index) => <h2 key={index}>{index} {name}</h2>)
 
     const persons = [
         {
@@ -26,7 +26,7 @@ export default function NameListObj () {
         }
     ]
 
-    const personList = persons.map(person => <Person key={person.id} person={person} />)
+    const personList = persons.map((person, index) => <Person key={index} person={person} />)
 
     return <div>{nameList} {personList}</div>
 }
