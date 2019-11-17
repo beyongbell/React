@@ -12,6 +12,8 @@ import PropComponent from './components/PropsComponent';
 import PropComponent2 from './components/PropsComponent2';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
 
 const nickname = 'BelL NaJa';
 
@@ -31,6 +33,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p> {formatName(user)} </p>
         <p> { nickname } </p>
+        <FunctionClick/>
+        <ClassClick/>
         <Greet/>
         <Greet2/>
         <Welcome/>
