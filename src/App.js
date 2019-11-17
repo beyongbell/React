@@ -8,7 +8,7 @@ import Hello from './components/Hello';
 import Props from './components/Props';
 import PropComponent from './components/PropsComponent';
 import Message from './components/Message';
-
+import Counter from './components/Counter';
 
 const nickname = 'BelL NaJa';
 
@@ -35,6 +35,7 @@ function App() {
         <Props name="Prop Tinnakorn"> <p> This is Children</p> </Props>
         <PropComponent name="Props Component Bell"/>
         <Message/>
+        <Counter/>
       </header>
     </div>
   );
