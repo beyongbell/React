@@ -21,6 +21,8 @@ import NameList from './components/NameList';
 import NameListObj from './components/NameListObj';
 import StyleSheet from './components/StyleSheet';
 import Inline from './components/Inline';
+import './appStyle.css';
+import styles from './appStyle.module.css';
 
 const nickname = '-------------- BelL --------------';
 
@@ -39,6 +41,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p> {formatName(user)} </p>
+        <h1 className="error"> Error</h1>
+        <h1 className={styles.success}> Error</h1>
         <Inline/>
         <StyleSheet success={true}/>
         <p> { nickname } </p>
