@@ -19,8 +19,10 @@ import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
 import NameListObj from './components/NameListObj';
+import StyleSheet from './components/StyleSheet';
+import Inline from './components/Inline';
 
-const nickname = 'BelL NaJa';
+const nickname = '-------------- BelL --------------';
 
 const user = {
   firstName : 'TinnakorN',
@@ -37,6 +39,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p> {formatName(user)} </p>
+        <Inline/>
+        <StyleSheet success={true}/>
         <p> { nickname } </p>
         <NameList/>
         <NameListObj/>
@@ -57,6 +61,7 @@ function App() {
         <Props2 name="Tinnakorn" gender="m"/>
         <Props3 name="Tinnakorn" gender="m"/>
       </header>
+      <StyleSheet/>
     </div>
   );
 }
