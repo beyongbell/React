@@ -24,6 +24,7 @@ import Inline from './components/Inline';
 import './appStyle.css';
 import styles from './appStyle.module.css';
 import Form from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
 
 const nickname = '-------------- BelL --------------';
 
@@ -42,8 +43,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p> {formatName(user)} </p>
-        <Form/>
+        <LifeCycleA/>
         <p> { nickname } </p>
+        <Form/>
         <h1 className="error"> Error</h1>
         <h1 className={styles.success}> Error</h1>
         <Inline/>

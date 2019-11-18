@@ -45,6 +45,7 @@ class Form extends Component {
                     onChange={this.handleUsernameChange}
                 />
             </div>
+            <br/>
             <div>
                 <label>Comments</label>
                 <textarea
@@ -52,6 +53,7 @@ class Form extends Component {
                     onChange={this.handleCommentsChange}
                 ></textarea>
             </div>
+            <br/>
             <div>
                 <label>Topic</label>
                 <select value={topic} onChange={this.handleTopicChange}>
