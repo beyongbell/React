@@ -23,6 +23,7 @@ import StyleSheet from './components/StyleSheet';
 import Inline from './components/Inline';
 import './appStyle.css';
 import styles from './appStyle.module.css';
+import Form from './components/Form';
 
 const nickname = '-------------- BelL --------------';
 
@@ -41,11 +42,12 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p> {formatName(user)} </p>
+        <Form/>
+        <p> { nickname } </p>
         <h1 className="error"> Error</h1>
         <h1 className={styles.success}> Error</h1>
         <Inline/>
         <StyleSheet success={true}/>
-        <p> { nickname } </p>
         <NameList/>
         <NameListObj/>
         <UserGreeting/>
@@ -65,7 +67,6 @@ function App() {
         <Props2 name="Tinnakorn" gender="m"/>
         <Props3 name="Tinnakorn" gender="m"/>
       </header>
-      <StyleSheet/>
     </div>
   );
 }
